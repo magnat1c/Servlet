@@ -23,6 +23,7 @@
 ${message}
 
 <br><br>
+<a href="/ResponseImageServlet">Отрисовка</a>
 <a href="/logout">Выйти</a>
 </body>
 </html>
