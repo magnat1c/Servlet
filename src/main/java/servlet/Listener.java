@@ -14,13 +14,13 @@ public class Listener implements HttpSessionListener {
     @Override
     public void sessionCreated(HttpSessionEvent arg0) {
         totalActiveSessions++;
-        System.out.println("Сессия создана!");
+        System.out.println("Вход выполнен, сессия создана");
     }
 
     @Override
     public void sessionDestroyed(HttpSessionEvent arg0) {
         totalActiveSessions--;
-        System.out.println("Сессия удалена!");
+        System.out.println("Выход выполнен, сессия удалена");
     }
 
 }

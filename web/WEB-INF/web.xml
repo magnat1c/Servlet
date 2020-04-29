@@ -8,6 +8,15 @@
         <servlet-class>servlet.UsrSer</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>FileUploadDemo</servlet-name>
+        <servlet-class>servlet.FileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadDemo</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>s1</servlet-name>
         <url-pattern>/user</url-pattern>
