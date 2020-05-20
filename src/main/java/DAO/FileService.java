@@ -8,9 +8,7 @@ import org.apache.poi.hwpf.extractor.WordExtractor;
 public class FileService {
 
     public static void main(String[] args) {
-        //save("t.txt");
 
-        //createTXT();
     }
 
     public static void createTXT() {
@@ -44,7 +42,7 @@ public class FileService {
         String str = "";
         try (Connection con = ConnectionDB.getDBconnection()) {
             String n = name.replaceAll("\\.", "|");
-            if (n.split("\\|")[1].equals("docx")){
+            if (n.split("\\|")[1].equals("doc")){
                 FileInputStream fis = new FileInputStream(name);
                 HWPFDocument document = new HWPFDocument(fis);
                 WordExtractor extractor = new WordExtractor(document);
